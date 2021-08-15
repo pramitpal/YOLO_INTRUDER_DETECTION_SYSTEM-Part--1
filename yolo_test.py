@@ -15,15 +15,15 @@ save_video_on_alert=False ## set to TRUE if want to save video file
 save_file='intruder.avi' ## save video file name
 
 #The mail addresses and password
-sender_address = 'exampleSender@gmail.com'
-sender_pass = 'password123'
-receiver_address = 'exampleReceiver@gmail.com'
+sender_address = 'exampleSender@gmail.com'      ########## change the sender email address
+sender_pass = 'password123'                     ########## change the password
+receiver_address = 'exampleReceiver@gmail.com'  ########## chane the receiver email address
 
 #version of yolo to be used
-yolo_version=4 ## which version of yolo to be used (2,3,4)
+yolo_version=4 ## which version of yolo to be used (2,3,4) #### ONLY YOLO 4 TINY MODEL IS PRESENT IN THIS REPO##################
 use_tiny=True ## use TRUE for fast processing-- use TINY MODEL
 ##################################################
-
+###################################### Contents of the sent email (CHANGE IF YOU WISH) #####################
 subject='Intruder Alert'
 mail_content = '''
 Hello,
@@ -31,6 +31,7 @@ There is some intruder in the private premises.
 Thank You
 '''
 ##################################################
+
 def send_mail(sender,receiver,passw,subject,body):
     message = MIMEMultipart()
     message['From'] = sender
