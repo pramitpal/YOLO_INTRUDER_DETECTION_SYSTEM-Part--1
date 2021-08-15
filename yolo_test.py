@@ -15,9 +15,9 @@ save_video_on_alert=False ## set to TRUE if want to save video file
 save_file='intruder.avi' ## save video file name
 
 #The mail addresses and password
-sender_address = 'gproject343@gmail.com'
-sender_pass = 'Project2022@'
-receiver_address = 'gproject343@gmail.com'
+sender_address = 'exampleSender@gmail.com'
+sender_pass = 'password123'
+receiver_address = 'exampleReceiver@gmail.com'
 
 #version of yolo to be used
 yolo_version=4 ## which version of yolo to be used (2,3,4)
