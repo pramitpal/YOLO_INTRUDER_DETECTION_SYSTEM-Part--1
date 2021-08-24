@@ -11,7 +11,7 @@ testing_video_file='walking.avi' ## test video file
 
 line_pos=400 ####GREEN LINE ON SCREEN BELOW WHICH IF PERSON IS PRESENT THEN MAIL IS SENT
 mail_flag=True ## if set to TRUE mail is sent to the given mail address
-save_video_on_alert=False ## set to TRUE if want to save video file
+save_video_on_alert=True ## set to TRUE if want to save video file
 save_file='intruder.avi' ## save video file name
 
 #The mail addresses and password
@@ -129,7 +129,7 @@ while cap.isOpened():
             print("file created")
             out = cv2.VideoWriter(save_file, codec, vid_fps, (vid_width, vid_height))
             
-        cv2.putText(img, 'Intruder Alert(RECORD ON) press '+ 'q' +' to stop',(10,50), font, 2, (255,255,255), 2)
+        cv2.putText(img, 'Intruder Alert(RECORD ON) press '+ 'q' +' to stop',(10,height-20), font, 2, (255,255,255), 2)
         if mail_flag:
             mail_flag=False
             send_mail(sender_address,receiver_address,sender_pass,subject,mail_content)
