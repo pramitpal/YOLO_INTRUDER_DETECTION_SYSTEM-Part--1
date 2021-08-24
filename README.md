@@ -2,4 +2,4 @@
   Intruder detection codes are here along with the used yolo v4 tiny model 
   A video file is also provided to test the system
  
-# Contributed by Pramit Kumar Pal and Avik Chowdhury.
+# by Pramit Kumar Pal
